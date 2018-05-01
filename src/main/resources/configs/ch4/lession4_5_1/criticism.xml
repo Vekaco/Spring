@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="performance" class="ch4.lession4_3_1.performances.MyPerformance"/>
+    <bean id="criticismEngine" class="ch4.lession4_5_1.CriticismEngineImpl">
+        <property name="criticismPool">
+            <list>
+                <value>Good</value>
+                <value>So so</value>
+                <value>Bad</value>
+            </list>
+        </property>
+    </bean>
+
+
+    <bean class="ch4.lession4_5_1.CriticAspect" factory-method="aspectOf">
+        <property name="criticismEngine" ref="criticismEngine"/>
+    </bean>
+
+</beans>
