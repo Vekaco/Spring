@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="cake" class="ch3.lession3_3_1.dessert.Cake" primary="true"/>
+    <bean id="iceCream" class="ch3.lession3_3_1.dessert.IceCream" primary="false"/>
+    <bean id="cookies" class="ch3.lession3_3_1.dessert.Cookies" primary="false"/>
+</beans>
