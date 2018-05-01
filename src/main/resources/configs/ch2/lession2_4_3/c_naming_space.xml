@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:c="http://www.springframework.org/schema/c"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="blankDisc" class="ch2.lession2_4_3.BlankDisc"
+          c:_0="Sgt. Pepper's Lonely Hearts Club Band"
+          c:_1="The Beatles"/>
+
+    <bean id="blankDisc-2" class="ch2.lession2_4_3.BlankDisc"
+          c:title="Sgt. Pepper's Lonely Hearts Club Band"
+          c:artist="The Beatles"/>
+
+    <bean id="blankDisc2" class="ch2.lession2_4_3.BlankDisc2">
+        <constructor-arg value="Sgt. Pepper's Lonely Club Band"/>
+        <constructor-arg value="The Beatles"/>
+        <constructor-arg>
+            <list>
+                <value>track1</value>
+                <value>track2</value>
+            </list>
+        </constructor-arg>
+    </bean>
+
+    <bean id="blankDisc2-2" class="ch2.lession2_4_3.BlankDisc2"
+          c:title="Sgt. Pepper's Lonely Club Band"
+          c:artist="The Beatles">
+        <constructor-arg>
+            <list>
+                <value>track1</value>
+                <value>track2</value>
+            </list>
+        </constructor-arg>
+    </bean>
+
+</beans>

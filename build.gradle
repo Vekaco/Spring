@@ -16,6 +16,9 @@ dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
     // https://mvnrepository.com/artifact/org.mockito/mockito-all
     testCompile group: 'org.mockito', name: 'mockito-all', version: '1.10.19'
+    // https://mvnrepository.com/artifact/com.github.stefanbirkner/system-rules
+    testCompile group: 'com.github.stefanbirkner', name: 'system-rules', version: '1.2.0'
+
     //https://blog.csdn.net/zzlh110/article/details/48862381
     compile("org.springframework:spring-aop:$springVersion",
             "org.springframework:spring-orm:$springVersion",

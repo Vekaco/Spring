@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+   <!-- <import resource="composite_config1.xml"/>-->
+    <bean class="ch2.lession2_5_1.CDConfig"/>
+    <bean id="cdPlayer" class="ch2.lession2_4_4.CDPlayer">
+        <property name="compactDisc" ref="compactDisc"/>
+    </bean>
+</beans>
